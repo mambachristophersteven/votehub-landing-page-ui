@@ -1,0 +1,23 @@
+{
+  "name": "VoteHubweb",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "apexcharts": "^3.35.0",
+    "axios": "^1.1.3",
+    "evergreen-ui": "^6.6.3",
+    "firebase": "^9.6.1",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-apexcharts": "^1.4.0",
+    "react-dom": "17.0.2",
+    "react-floating-whatsapp": "^5.0.6",
+    "sass": "^1.50.1"
+  }
+}

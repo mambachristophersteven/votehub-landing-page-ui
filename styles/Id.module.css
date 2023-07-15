@@ -1,0 +1,672 @@
+
+.container {
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+    font-family: "Space Grotesk", sans-serif;
+  background-image: url(/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.app {
+  width: 7vw;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.app1 {
+  width: 7vw;
+  height: 2.25vw;
+  cursor: pointer;
+}
+.logo1 {
+  width: 100px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.logo {
+  display: none;
+  cursor: pointer;
+}
+.top {
+  width: 100%;
+  padding: 5vh 20vh 5vh 20vh;
+}
+.imgcon {
+  width: 100%;
+  height: 55vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh;
+}
+.imagebg {
+  width: 100%;
+  height: 55vh;
+  /* filter: blur(19px) grayscale(0.6); */
+  /* -webkit-filter: blur(10px) grayscale(1); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.image {
+  width: 50vh;
+  height: 100%;
+  z-index: 999;
+  object-fit: cover;
+  display: none;
+}
+.openimage {
+  z-index: 999;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.322);
+  color: white;
+  font-size: 1.3vw;
+  font-weight: 900;
+  cursor: pointer;
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-top: 30px;
+  padding: 5vh 20vh 5vh 20vh;
+}
+.left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border: solid #eee 1px;
+  padding: 2vh 1vw 5vh 1vw;
+}
+.wrapper h1 {
+  color: #e42149;
+  text-transform: uppercase;
+  font-size: 2.5vw;
+  margin: 0;
+  position: relative;
+  line-height: 1.1;
+  letter-spacing: -0.3rem;
+  font-weight: 900;
+}
+.wrapper h1:before {
+  content: attr(data-heading);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff146;
+  transform: translate(2.25%, 0);
+  mix-blend-mode: multiply;
+}
+.wrapper h1:after {
+  content: attr(data-heading);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0091e5;
+  transform: translate(-2.25%, 0);
+  mix-blend-mode: multiply;
+}
+.title {
+  font-size: 2.5vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.head {
+  color: gray;
+  margin-top: 1.6vw;
+}
+.about {
+  font-size: 1.3vw;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.organizer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+}
+.organizerImage {
+  width: 50px;
+  margin-left: -4px;
+}
+.h1 {
+  font-size: 20px;
+  font-weight: 900;
+}
+.select {
+  width: 100%;
+  height: 45px;
+  margin-top: 10px;
+  border: solid #0099ff2f 1px;
+  border-radius: 3px;
+  font-weight: 600;
+  padding-left: 10px;
+  background-color: #baffdf1a;
+  outline-color: #0099ff62;
+  -webkit-appearance: none;
+  background-image: url(/down.png);
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: 97% 50%;
+}
+.buy {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  background-color: #2aeb7a;
+  color: white;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.buy:hover {
+  background-color: #2aeb7bb7;
+}
+.buy2 {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  background-color: #eb2a44;
+  color: white;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+  min-height: 50vh;
+  margin-top: 10vh;
+  padding: 10vh 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: rgb(214, 214, 214);
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+.logob {
+  width: 10vw;
+  margin-bottom: 20px;
+}
+.quicklink {
+  font-size: 2vw;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.link {
+  font-size: 1.3vw;
+  font-weight: 400;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: rgb(221, 221, 221);
+}
+.socials {
+  flex-direction: row;
+  margin-top: 20px;
+}
+.soc {
+  width: 25px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.modalcon {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  background-color: white;
+  width: 50vw;
+  min-height: 70vh;
+  border-radius: 10px;
+  padding: 4vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.imgmodal {
+  background-color: white;
+  width: 90vh;
+  height: 90vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  object-fit: contain;
+}
+.imgm {
+  width: "100%";
+  height: "100%";
+  border-radius: 10px;
+}
+.price {
+  font-size: 3vw;
+  margin-bottom: 30px;
+}
+.input1 {
+  height: 50px;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  padding-left: 10px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+.input {
+  height: 50px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  padding-left: 10px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+.gh {
+  width: 30px;
+  height: 20px;
+  margin-right: 5px;
+  margin-bottom: -2px;
+}
+.rubber_stamp {
+  font-family: 'Vollkorn', serif;
+  font-size: 39px;
+  line-height: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+  border: 7px solid red;
+  float: left;
+  padding: 10px 7px;
+  border-radius: 10px;
+  opacity: 0.8;
+  -webkit-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  position:absolute;
+  top:32%;
+  transform: scale(2) rotate(-10deg);
+}
+.rubber_stamp::after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  top: -10px;
+  left: -10px;
+  padding: 10px;
+  background: url(https://raw.github.com/domenicosolazzo/css3/master/img/noise.png) repeat;
+}
+
+@media only screen and (max-width: 600px) {
+  .openimage {display: none;}
+  .wrapper h1 {
+    color: #e42149;
+    text-transform: uppercase;
+    font-size: 8vw;
+    margin: 0;
+    position: relative;
+    line-height: 1.1;
+    letter-spacing: -0.3rem;
+    font-weight: 900;
+  }
+  .container {
+    padding: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+
+      font-family: "Space Grotesk", sans-serif;
+    background-image: url(/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    position: absolute;
+    z-index: 9999;
+  }
+  .imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+  }
+  .app {
+    width: 7vw;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .app1 {
+    width: 7vw;
+    height: 2.25vw;
+    cursor: pointer;
+  }
+  .logo {
+    width: 100px;
+    margin-bottom: 20px;
+    z-index: 999999;
+    display: flex;
+  }
+  .logo1 {
+    display: none;
+  }
+  .top {
+    width: 100%;
+    padding: 0;
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.9)
+    );
+    position: absolute;
+    inset: 0;
+  }
+  .imgcon {
+    width: 100%;
+    height: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 0;
+  }
+  .imagebg {
+    width: 100%;
+    height: 55vh;
+    filter: blur(19px) gray;
+    -webkit-filter: blur(10px) grayscale(1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+  }
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 2vh 5vw 5vh 5vw;
+  }
+  .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: solid #eee 1px;
+    padding: 5vh 5vw 5vh 5vw;
+  }
+  .title {
+    font-size: 10vw;
+    font-weight: 900;
+    line-height: 10vw;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .head {
+    color: gray;
+    margin-top: 4vw;
+  }
+  .about {
+    font-size: 4.5vw;
+    font-weight: 500;
+    margin-top: 5px;
+    align-items: justify;
+  }
+  .organizer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .organizerImage {
+    width: 50px;
+    margin-left: -4px;
+  }
+  .h1 {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .select {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    border: solid #0099ff2f 1px;
+    border-radius: 3px;
+    font-weight: 600;
+    padding-left: 10px;
+    background-color: #baffdf1a;
+    outline-color: #0099ff62;
+  }
+  .buy {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    background-color: #2aeb7a;
+    color: white;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .buy:hover {
+    background-color: #2aeb7bb7;
+  }
+  .buy2 {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    background-color: #eb2a44;
+    color: white;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .footer {
+    background-color: black;
+    height: auto;
+    width: 100%;
+    margin-top: 5vh;
+    padding: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: rgb(153, 152, 152);
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .logob {
+    width: 30vw;
+    margin-bottom: 20px;
+  }
+  .quicklink {
+    font-size: 7vw;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .link {
+    font-size: 4.5vw;
+    font-weight: 400;
+    margin-bottom: 7px;
+    cursor: pointer;
+    color: #eee;
+  }
+
+  .socials {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .soc {
+    width: 8vw;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .modal {
+    background-color: white;
+    width: 90vw;
+    min-height: 50vh;
+    border-radius: 10px;
+    padding: 7vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .price {
+    font-size: 7vw;
+    margin-bottom: 30px;
+  }
+  .input1 {
+    height: 50px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+    padding-left: 10px;
+    font-weight: 600;
+    border-radius: 3px;
+  }
+  .input {
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+    padding-left: 10px;
+    font-weight: 600;
+    border-radius: 3px;
+  }
+  .rubber_stamp {
+    font-family: 'Vollkorn', serif;
+    font-size: 39px;
+    line-height: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: red;
+    border: 7px solid red;
+    float: left;
+    padding: 10px 7px;
+    border-radius: 10px;
+    opacity: 0.8;
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    position:absolute;
+    top:32%;
+    transform: scale(1.3) rotate(-10deg);
+    z-index: 9999;
+  }
+  .rubber_stamp::after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    top: -10px;
+    left: -10px;
+    padding: 10px;
+    background: url(https://raw.github.com/domenicosolazzo/css3/master/img/noise.png) repeat;
+  }
+}
+.close {
+  position: absolute;
+  width: 30px;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+}

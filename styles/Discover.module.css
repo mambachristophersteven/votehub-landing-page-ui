@@ -1,0 +1,614 @@
+.container {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+    font-family: "Space Grotesk", sans-serif;
+}
+.main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 55vh;
+  width: 100%;
+  padding: 10vh 10vw;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black),
+    url(/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  /* background-color: #e5e5e5; */
+  margin-bottom: 10vh;
+}
+.logo {
+  width: 4vw;
+  cursor: pointer;
+}
+.mainText {
+  margin-top: 40px;
+  font-size: 6vw;
+  font-weight: 900;
+}
+.subText {
+  font-size: 2vw;
+  font-weight: 400;
+  width: 35vw;
+}
+.main2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  padding: 1vh 10vw 10vh 10vw;
+}
+.search {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.search div {
+  width: 50%;
+  height: 55px;
+  border-radius: 15px;
+  background-color: rgba(49, 49, 49, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5vw;
+}
+.search input {
+  width: 95%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3vw;
+    font-family: "Space Grotesk", sans-serif;
+  outline: none;
+  justify-content: center;
+  color: white;
+}
+.search img {
+  width: 3.5%;
+}
+.h1 {
+  font-size: 4vw;
+  font-weight: 700;
+  text-align: center;
+}
+.points {
+  /* display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start; */
+  margin-top: 10vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, 32%);
+  grid-row-gap: 15vh;
+  grid-column-gap: 1vh;
+}
+.point {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25vw;
+  height: 20vw;
+  border-radius: 10px;
+  padding: 1.5vw;
+  cursor: pointer;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5)
+  );
+  background-color: rgba(77, 223, 223, 0.534);
+  transition: 0.2s ease-in-out;
+  position: relative;
+  background-size: cover;
+}
+.point:hover {
+  margin-top: -20px;
+}
+/* .point img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    object-fit: cover;
+    z-index: 0;
+} */
+.head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  background: white;
+  padding: 0.8vw 1.1vw;
+  border-radius: 10px;
+  color: black;
+  transform: scale(0.8);
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.more {
+  padding: 1vw 1.5vw;
+  background-color: rgba(222, 222, 222, 0.52);
+  margin-top: 3vw;
+  border-radius: 10px;
+  font-size: 1vw;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+.more:hover {
+  text-decoration: underline;
+  background-color: rgba(5, 98, 89, 0.514);
+}
+.h2 {
+  font-size: 2vw;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text {
+  color: gray;
+  font-size: 1.3vw;
+  font-weight: 400;
+  line-height: 1;
+}
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  margin-top: 10vh;
+}
+.app2 {
+  width: 100%;
+}
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10vh;
+  padding: 5vh 0;
+}
+.footer {
+  background-color: white;
+  min-height: 50vh;
+  margin-top: 5vh;
+  padding: 10vh 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: black;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+.logob {
+  width: 6vw;
+  margin-bottom: 20px;
+}
+.quicklink {
+  font-size: 2vw;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.link {
+  font-size: 1.3vw;
+  font-weight: 400;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: rgb(0, 0, 49);
+}
+
+.socials {
+  flex-direction: row;
+  margin-top: 20px;
+}
+.soc {
+  width: 25px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.gh {
+  width: 30px;
+  height: 20px;
+  margin-right: 5px;
+  margin-bottom: -2px;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navitem {
+  color: white;
+  font-size: 1.2vw;
+    font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  margin-left: 2vw;
+  cursor: pointer;
+}
+.navitem:hover {
+  color: #7288a2;
+}
+.menu {
+  display: flex;
+  width: 2vw;
+  display: flex;
+  cursor: pointer;
+}
+.sidemenu {
+  display: unset;
+  width: 40vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  background-color: white;
+  z-index: 999;
+  left: -100vw;
+  transition: 0.5s;
+  padding: 5vw 8vw;
+  border-right: solid #03b5d2 3px
+}
+.emptycon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  flex-direction: column;
+  padding-top: 10vh;
+}
+.emptyimg {
+  width: 20vw;
+  opacity: 0.5;
+}
+.rubber_stamp {
+  font-family: 'Vollkorn', serif;
+  font-size: 3.2vw;
+  line-height: 3.2vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+  border: 0.6vw solid red;
+  float: left;
+  padding: 10px 7px;
+  border-radius: 10px;
+  opacity: 0.8;
+  -webkit-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  position:absolute;
+  top:32%;
+  left: 3vw;
+  transform: scale(1) rotate(-10deg);
+}
+.rubber_stamp::after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  top: -10px;
+  left: -10px;
+  padding: 10px;
+  background: url(https://raw.github.com/domenicosolazzo/css3/master/img/noise.png) repeat;
+}
+
+@media only screen and (max-width: 600px) {
+  @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,900;1,600;1,700&display=swap");
+  .container {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+      font-family: "Space Grotesk", sans-serif;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    padding: 10vh 10vw;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black),
+      url(/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* background-color: white; */
+    margin-bottom: 5vh;
+  }
+  .logo {
+    width: 13vw;
+  }
+  .mainText {
+    margin-top: 40px;
+    font-size: 13vw;
+    font-weight: 900;
+    line-height: 13vw;
+  }
+  .subText {
+    font-size: 4.5vw;
+    font-weight: 400;
+    margin-top: 10px;
+    width: 82vw;
+  }
+  .imgs {
+    margin-top: 30px;
+  }
+  .app {
+    width: 35vw;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .app1 {
+    width: 35vw;
+    height: 12vw;
+    cursor: pointer;
+  }
+  .main2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    min-height: auto;
+    width: 100%;
+    padding: 0vh 10vw;
+  }
+  .search {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .search div {
+    width: 100%;
+    height: 55px;
+    border-radius: 15px;
+    background-color: rgba(49, 49, 49, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+  }
+  .search input {
+    width: 90%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 3.5vw;
+      font-family: "Space Grotesk", sans-serif;
+    outline: none;
+    justify-content: center;
+  }
+  .search img {
+    width: 5%;
+  }
+  .h1 {
+    font-size: 8vw;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3vh;
+  }
+  .points {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5vh;
+    grid-row-gap: 20px;
+  }
+  .point {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 70vw;
+    border-radius: 10px;
+    padding: 5vw;
+    cursor: pointer;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5)
+    );
+    background-color: rgba(77, 223, 223, 0.534);
+    transition: 0.2s ease-in-out;
+    position: relative;
+    background-size: cover;
+
+  }
+  .point:hover {
+    margin-top: -20px;
+  }
+  .head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background: white;
+    padding: 2vw 3vw;
+    border-radius: 10px;
+    color: black;
+    transform: scale(1);
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+  .more {
+    padding: 4vw 5vw;
+    background-color: rgba(23, 2, 31, 0.52);
+    margin-top: 10vw;
+    border-radius: 10px;
+    font-size: 3vw;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+  }
+  .more:hover {
+    text-decoration: underline;
+    background-color: rgba(5, 98, 89, 0.514);
+  }
+  .h2 {
+    font-size: 4.5vw;
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .text {
+    color: gray;
+    font-size: 3vw;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .footer {
+    background-color: white;
+    height: auto;
+    margin-top: 5vh;
+    padding: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: black;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .logob {
+    width: 30vw;
+    margin-bottom: 20px;
+  }
+  .quicklink {
+    font-size: 7vw;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .link {
+    font-size: 4.5vw;
+    font-weight: 400;
+    margin-bottom: 7px;
+    cursor: pointer;
+    color: rgb(0, 0, 49);
+  }
+
+  .socials {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .soc {
+    width: 8vw;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navitem {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    width: 6vw;
+    display: flex;
+  }
+  .sidemenu {
+    display: unset;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    z-index: 999;
+    left: -100vw;
+    transition: 0.5s;
+    padding: 20vw 10vw;
+  }
+  .emptycon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    flex-direction: column;
+    padding-top: 0vh;
+  }
+  .emptyimg {
+    width: 40vw;
+    opacity: 0.5;
+  }
+  .rubber_stamp {
+    font-family: 'Vollkorn', serif;
+    font-size: 13vw;
+    line-height: 3.2vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: red;
+    border: 0.6vw solid red;
+    float: left;
+    padding: 5vw 4vw;
+    border-radius: 10px;
+    opacity: 0.8;
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    position:absolute;
+    top:32%;
+    left: 3vw;
+    transform: scale(0.8) rotate(-10deg);
+  }
+  .rubber_stamp::after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    top: -10px;
+    left: -10px;
+    padding: 10px;
+    background: url(https://raw.github.com/domenicosolazzo/css3/master/img/noise.png) repeat;
+  }
+}

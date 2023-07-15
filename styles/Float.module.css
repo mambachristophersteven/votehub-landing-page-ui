@@ -1,0 +1,173 @@
+
+.floating {
+  position: relative;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  color: white;
+    font-family: "Space Grotesk", sans-serif;
+}
+.floatingartists {
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.floatinggroup {
+  margin: 0 10px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+.floatinggroup:nth-child(odd) {
+  transform: translateY(100px);
+}
+.floatingimage {
+  width: 22vw;
+  height: 32vw;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  opacity: 0.3;
+  perspective: 1000px;
+  transform: rotateX(5deg);
+}
+
+.floatingimage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.floatingtext {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.floatingh1 {
+  font-size: 6vw;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.floatingsubh1 {
+  font-size: 1.5vw;
+}
+
+.discoverbtn {
+  width: 10vw;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a6b9e9;
+  margin-top: 5vh;
+  font-size: 1vw;
+  font-weight: 600;
+  box-shadow: #0155ef 5px 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.discoverbtn:hover {
+  box-shadow: #0155ef -5px 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .floating {
+    position: relative;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    color: white;
+      font-family: "Space Grotesk", sans-serif;
+    /* background-color: blueviolet; */
+  }
+  .floatingartists {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: -10vh;
+  }
+  .floatinggroup {
+    margin: 0 5px;
+    perspective: 1000px;
+  }
+  .floatinggroup div {
+    transform: rotateY(5deg);
+  }
+  .floatingimage {
+    width: 40vw;
+    height: 60vw;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    opacity: 0.3;
+  }
+
+  .floatingimage img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .floatingtext {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    top: 0;
+    left: 0;
+
+    /* background-image: url(/background.png);
+  background-size: ;
+  background-repeat: no-repeat; */
+    /* background-position: 100% 25%; */
+  }
+  .floatingh1 {
+    font-size: 10vw;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .floatingsubh1 {
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  .discoverbtn {
+    width: 35vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a6b9e9;
+    margin-top: 5vh;
+    font-size: 3vw;
+    font-weight: 600;
+    box-shadow: #0155ef 5px 5px;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .discoverbtn:hover {
+    box-shadow: #0155ef -5px 5px;
+  }
+}
